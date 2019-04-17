@@ -1,0 +1,1 @@
+# ArchitectureAspCore
