@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Oa.Data", "Oa.Data\Oa.Data.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Oa.Service", "Oa.Service\Oa.Service.csproj", "{F754B5C7-5836-48AB-B47F-4ACEDE5283D2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Oa.Web", "Oa.Web\Oa.Web.csproj", "{1D6BF82D-B2CF-49CA-BE8F-3365F0A0F9BF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{F754B5C7-5836-48AB-B47F-4ACEDE5283D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F754B5C7-5836-48AB-B47F-4ACEDE5283D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F754B5C7-5836-48AB-B47F-4ACEDE5283D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D6BF82D-B2CF-49CA-BE8F-3365F0A0F9BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D6BF82D-B2CF-49CA-BE8F-3365F0A0F9BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D6BF82D-B2CF-49CA-BE8F-3365F0A0F9BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D6BF82D-B2CF-49CA-BE8F-3365F0A0F9BF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -13,7 +13,7 @@ namespace Oa.Data.EntitiesMap
                 .IsRequired()
                 .HasMaxLength(50);
 
-            entity.Property(e => e.Ipaddress)
+            entity.Property(e => e.IPAddress)
                 .HasColumnName("IPAddress")
                 .HasMaxLength(20);
 
