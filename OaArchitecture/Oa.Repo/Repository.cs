@@ -2,6 +2,7 @@ namespace Oa.Repo
 {
     using System;
     using System.Collections.Generic;
+    using System.Linq;
     using System.Threading.Tasks;
     using Microsoft.EntityFrameworkCore;
     using Microsoft.EntityFrameworkCore.Extensions.Internal;
@@ -19,15 +20,15 @@ namespace Oa.Repo
             _entities = _context.Set<T>();
         }
 
-        public async Task<IEnumerable<T>> GetAll()
+        public IEnumerable<T> GetAll()
         {
-            return await _entities.ToListAsync();
+            return  _entities.ToList();
          
         }
 
-        public async Task<T> Get(Guid id)
+        public T Get(Guid id)
         {
-            return await _entities.SingleOrDefaultAsync(s => s.Id == id);
+            return  _entities.SingleOrDefault(s => s.Id == id);
         }
 
         public void Insert(T entity)
@@ -68,9 +69,9 @@ namespace Oa.Repo
             _entities.Remove(entity); 
         }
 
-        public void SaveChanges()
+        public bool SaveChanges()
         {
-            _context.SaveChanges();
+           return  _context.SaveChanges()>0;
         }
     }
 }

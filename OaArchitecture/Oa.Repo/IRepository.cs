@@ -7,12 +7,12 @@ namespace Oa.Repo
 
     public interface IRepository<T>where T: BaseEntity
     {
-        Task <IEnumerable<T>> GetAll();
-        Task<T> Get(Guid id);
+        IEnumerable<T> GetAll();
+        T Get(Guid id);
         void Insert(T entity);
         void Update(T entity);
         void Delete(T entity);
         void Remove(T entity);
-        void SaveChanges();
+        bool SaveChanges();
     }
 }
