@@ -10,8 +10,8 @@ namespace Oa.Repo
     public class Repository<T>:IRepository<T> where T: BaseEntity 
     {
         private readonly DataContext _context;
-        private DbSet<T> _entities;
-        string _errorMessage = string.Empty;
+        private readonly DbSet<T> _entities;
+        //string _errorMessage = string.Empty;
 
         public Repository(DataContext context )
         {
